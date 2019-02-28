@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #93ff01;
+  background: #7d1854;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2356,11 +2356,15 @@ pre .javascript .function {
 @media (min-width: 768px) and (max-width: 991px) {
   .busuanzi-count {
     width: auto;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 }
 @media (max-width: 767px) {
   .busuanzi-count {
     width: auto;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 }
 .site-uv,
@@ -2374,7 +2378,7 @@ pre .javascript .function {
   margin: 0 5px;
 }
 .site-uv {
-  margin-right: 2px;
+  margin-right: 10px;
 }
 .site-uv::after {
   content: "|";
