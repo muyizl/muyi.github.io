@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://muyizl.github.io/"/>
-  <updated>2019-02-28T06:39:12.674Z</updated>
+  <updated>2019-02-26T07:45:48.047Z</updated>
   <id>https://muyizl.github.io/</id>
   
   <author>
@@ -15,20 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>copyrighttest</title>
-    <link href="https://muyizl.github.io/2019/02/28/copyrighttest/"/>
-    <id>https://muyizl.github.io/2019/02/28/copyrighttest/</id>
-    <published>2019-02-28T06:39:12.000Z</published>
-    <updated>2019-02-28T06:39:12.674Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
