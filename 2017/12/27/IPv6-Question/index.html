@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="技术博客">
 <meta property="og:description" content="背景在最近一次项目审核被拒的问题中苹果提到了无法在IPv6环境下访问应用，因此做了一些问题排查。 测试客户端是否能够在IPv6环境下运行测试服务器是否能够支持IPv6测试苹果的服务器是否能够访问我们的ip地址首先需要配置ipv6网络环境，配置方法自行百度或 看这里看这里…。 问题：互联网共享界面为什么没有 ‘创建NAT64’ 这一选项答案：请按住option打开共享。。。  上一项通过证明你的客户">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-03T07:31:23.498Z">
+<meta property="og:updated_time" content="2019-03-03T07:46:18.730Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IPv6审核问题">
 <meta name="twitter:description" content="背景在最近一次项目审核被拒的问题中苹果提到了无法在IPv6环境下访问应用，因此做了一些问题排查。 测试客户端是否能够在IPv6环境下运行测试服务器是否能够支持IPv6测试苹果的服务器是否能够访问我们的ip地址首先需要配置ipv6网络环境，配置方法自行百度或 看这里看这里…。 问题：互联网共享界面为什么没有 ‘创建NAT64’ 这一选项答案：请按住option打开共享。。。  上一项通过证明你的客户">
@@ -327,7 +327,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-03-03T15:31:23+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-03T15:46:18+08:00">
                 2019-03-03
               </time>
             
@@ -436,8 +436,8 @@
 
       
         <h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>在最近一次项目审核被拒的问题中苹果提到了无法在IPv6环境下访问应用，因此做了一些问题排查。</p>
-<div class="tabs" id="问题排查"><ul class="nav-tabs"><li class="tab"><a href="#问题排查-1">测试客户端是否能够在IPv6环境下运行</a></li><li class="tab"><a href="#问题排查-2">测试服务器是否能够支持IPv6</a></li><li class="tab"><a href="#问题排查-3">测试苹果的服务器是否能够访问我们的ip地址</a></li></ul><div class="tab-content"><div class="tab-pane" id="问题排查-1"><p>首先需要配置ipv6网络环境，配置方法自行百度或<span class="exturl" data-url="aHR0cDovL2ppbmd5YW4uYmFpZHUuY29tL2FydGljbGUvMGJjODA4ZmM1NmE5YmYxYmQ1ODViOTZkLmh0bWw="><i class="fa fa-external-link"></i> 看这里看这里…</span>。</p>
-<div class="note "><p>问题：互联网共享界面为什么没有 ‘创建NAT64’ 这一选项</p><br><p>答案：请按住option打开共享。。。</p></div>
+<div class="tabs" id="问题排查"><ul class="nav-tabs"><li class="tab active"><a href="#问题排查-1">测试客户端是否能够在IPv6环境下运行</a></li><li class="tab"><a href="#问题排查-2">测试服务器是否能够支持IPv6</a></li><li class="tab"><a href="#问题排查-3">测试苹果的服务器是否能够访问我们的ip地址</a></li></ul><div class="tab-content"><div class="tab-pane active" id="问题排查-1"><p>首先需要配置ipv6网络环境，配置方法自行百度或<span class="exturl" data-url="aHR0cDovL2ppbmd5YW4uYmFpZHUuY29tL2FydGljbGUvMGJjODA4ZmM1NmE5YmYxYmQ1ODViOTZkLmh0bWw="><i class="fa fa-external-link"></i> 看这里看这里…</span>。</p>
+<div class="note "><p>问题：互联网共享界面为什么没有 ‘创建NAT64’ 这一选项<br>答案：请按住option打开共享。。。</p></div>
 
 </div><div class="tab-pane" id="问题排查-2"><p>上一项通过证明你的客户端应用在 IPv6 网络下，是(基本)没有问题的，但是无法验证你的服务器能够对 IPv6 网络做出正确的响应。然而，苹果审核的时候，却是要去 DNS 服务器询问你的服务器的 IPv6 地址，然后进行访问。如果查询不到 IPv6 地址，可能会进而询问 IPv4 地址，然后进行转换使用。苹果明确表示服务器不需要支持 IPv6，但是必须正确响应 IPv6 的 DNS 查询。</p>
 <p>如何验证呢？使用以下命令即可：</p>
