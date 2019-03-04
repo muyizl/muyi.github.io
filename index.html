@@ -1223,7 +1223,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-03-04T15:59:45+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-04T16:07:55+08:00">
                 2019-03-04
               </time>
             
@@ -1294,7 +1294,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  739
+                  736
                 </span>
               
 
@@ -1336,8 +1336,8 @@
             <blockquote class="blockquote-center"><p>笨蛋自以为聪明，聪明人才知道自己是笨蛋。 —— 莎士比亚 </p>
 </blockquote>
 <h2 id><a href="#" class="headerlink" title></a><span class="exturl"><i class="fa fa-external-link"></i> GitHub Pages</span></h2><div class="tabs" id="pages"><ul class="nav-tabs"><li class="tab active"><a href="#pages-1">Github 账号</a></li><li class="tab"><a href="#pages-2">Github 资料库</a></li></ul><div class="tab-content"><div class="tab-pane active" id="pages-1"><p>注册<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29t"><i class="fa fa-external-link"></i> Github</span>账号</p>
-</div><div class="tab-pane" id="pages-2"><p>Create a repository，repository name：xxx.github.io</p>
-<div class="note "><p>xxx.github.io中的xxx为Github账号的用户名</p></div>
+</div><div class="tab-pane" id="pages-2"><p>Create a repository，repository name：username.github.io</p>
+<div class="note warning"><p>username.github.io中的username为Github账号的用户名</p></div>
 
 </div></div></div>
 <h2 id="-1"><a href="#-1" class="headerlink" title></a><span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv"><i class="fa fa-external-link"></i> Hexo</span></h2><h4 id="安装Hexo前提"><a href="#安装Hexo前提" class="headerlink" title="安装Hexo前提"></a>安装Hexo前提</h4><div class="tabs" id="hexo-setup"><ul class="nav-tabs"><li class="tab active"><a href="#hexo-setup-1">安装Git</a></li><li class="tab"><a href="#hexo-setup-2">安装Node.js</a></li></ul><div class="tab-content"><div class="tab-pane active" id="hexo-setup-1"><p>Mac：使用 <span class="exturl" data-url="aHR0cHM6Ly9icmV3LnNoLw=="><i class="fa fa-external-link"></i> Homebrew</span>, <span class="exturl" data-url="aHR0cHM6Ly93d3cubWFjcG9ydHMub3JnLw=="><i class="fa fa-external-link"></i> MacPorts</span> ：brew install git;</p>
@@ -1356,19 +1356,19 @@
 <h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>安装 Hexo 完成后，在终端依次执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
 <p>新建完成后，指定文件夹的目录如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></p>
 <p>在当前folder下执行下列命令开启服务器:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></p>
-<div class="note "><p>验证完成可使用control + c关闭服务器连接。</p></div>
+<div class="note warning"><p>验证完成可使用control + c关闭服务器连接。</p></div>
 <p>在浏览器中访问<span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAw"><i class="fa fa-external-link"></i> 网址</span>，验证Hexo是否搭建成功。</p>
-<p>打开_config,yml文件更改以下信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
-<div class="note "><p>username为Github账号名</p></div>
+<p>打开_config,yml文件更改以下信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: https://github.com/username/username.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
+<div class="note warning"><p>username为Github账号名</p></div>
 <p>在当前folder下依次执行下列命令关联Github：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
-<p>在浏览器中访问<span class="label primary">http://<username>.github.io</username></span>，验证Hexo是否与Github关联成功。</p>
+<p>在浏览器中访问<span class="label primary">http://username.github.io</span>，验证Hexo是否与Github关联成功。</p>
 <h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><h4 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h4><p>建议大家去<span class="exturl" data-url="aHR0cHM6Ly9zZy5nb2RhZGR5LmNvbS8="><i class="fa fa-external-link"></i> GoDaddy</span>购买，第一年很便宜。</p>
 <h4 id="申请免费域名"><a href="#申请免费域名" class="headerlink" title="申请免费域名"></a>申请免费域名</h4><span class="exturl" data-url="aHR0cDovL3d3dy5wb2ludC5tbC8="><i class="fa fa-external-link"></i> .ML免费域名申请注册</span>、<span class="exturl" data-url="aHR0cDovL3d3dy5kb3QuY2Yv"><i class="fa fa-external-link"></i> .CF免费域名申请注册</span>、<span class="exturl" data-url="aHR0cDovL3d3dy5kb3QuZ2Ev"><i class="fa fa-external-link"></i> .GA免费域名申请注册</span>、<span class="exturl" data-url="aHR0cDovL3d3dy5kb3QudGs="><i class="fa fa-external-link"></i> .TK免费域名申请注册</span>
 <p>申请域名都比较简单，实在不会就Google/百度一下，很多教程，TK域名算是一个老牌的域名了，据说目前活跃的域名超过1600万个，这里估计国人也贡献了不少。</p>
 <p>将自己的域名和Github Pages绑定，需要做以下几件事情：</p>
 <h3 id="修改域名DNS"><a href="#修改域名DNS" class="headerlink" title="修改域名DNS"></a>修改域名DNS</h3><p>详情：修改你的域名DNS为f1g1ns1.dnspod.net 和 f1g1ns2.dnspod.net 。</p>
 <h3 id="创建CNAME文件"><a href="#创建CNAME文件" class="headerlink" title="创建CNAME文件"></a>创建CNAME文件</h3><p>详情：在你的本站点目录的source目录下添加一个CNAME文件，以文本编辑器打开，里面添加你的域名信息（不带有http），例如：<span class="label primary">baidu.com</span> 。</p>
-<h3 id="配置DNSPOD"><a href="#配置DNSPOD" class="headerlink" title="配置DNSPOD"></a>配置DNSPOD</h3><p>详情：前往<a href="https://www.dnspod.cn/" target="_blank" rel="noopener">DNSPOD官网</a>注册，并添加域名，添加成功后点击域名链接，进入域名记录界面添加三条如下记录：</p>
+<h3 id="配置DNSPOD"><a href="#配置DNSPOD" class="headerlink" title="配置DNSPOD"></a>配置DNSPOD</h3><p>详情：前往<span class="exturl" data-url="aHR0cHM6Ly93d3cuZG5zcG9kLmNuLw=="><i class="fa fa-external-link"></i> DNSPOD官网</span>注册，并添加域名，添加成功后点击域名链接，进入域名记录界面添加三条如下记录：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">主机记录：@ 记录类型：A 记录值：192.30.252.153</span><br><span class="line">主机记录：@ 记录类型：A 记录值：192.30.252.154</span><br><span class="line">主机记录：www 记录类型：CNAME 记录值：你的github pages地址</span><br></pre></td></tr></table></figure>
 <h3 id="更新部署"><a href="#更新部署" class="headerlink" title="更新部署"></a>更新部署</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd hexo &lt;folder&gt;</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 <p>将修改后的hexo相关文件提交后，即可使用自己的域名访问博客了。</p>
