@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://muyizl.github.io/"/>
-  <updated>2019-03-01T07:23:38.966Z</updated>
+  <updated>2019-03-03T07:48:11.758Z</updated>
   <id>https://muyizl.github.io/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>github_pages_hexo</title>
-    <link href="https://muyizl.github.io/2019/03/01/github-pages-hexo/"/>
-    <id>https://muyizl.github.io/2019/03/01/github-pages-hexo/</id>
-    <published>2019-03-01T02:45:55.000Z</published>
-    <updated>2019-03-01T07:23:38.966Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Github" scheme="https://muyizl.github.io/tags/Github/"/>
-    
-      <category term="Pages" scheme="https://muyizl.github.io/tags/Pages/"/>
-    
-      <category term="Hexo" scheme="https://muyizl.github.io/tags/Hexo/"/>
-    
-  </entry>
   
   <entry>
     <title>IPv6审核问题</title>
@@ -172,6 +152,37 @@
       <category term="Style" scheme="https://muyizl.github.io/tags/Style/"/>
     
       <category term="Guides" scheme="https://muyizl.github.io/tags/Guides/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于Github Pages和Hexo搭建个人博客</title>
+    <link href="https://muyizl.github.io/2017/12/19/hexo-github-pages/"/>
+    <id>https://muyizl.github.io/2017/12/19/hexo-github-pages/</id>
+    <published>2017-12-19T06:40:17.000Z</published>
+    <updated>2019-03-04T03:01:06.907Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>笨蛋自以为聪明，聪明人才知道自己是笨蛋。 —— 莎士比亚 </p></blockquote><h2 id><a href="#" class="headerlink" title></a><span class="exturl"><i class="fa fa-external-link"></i> GitHub Pages</span></h2><div class="tabs" id="pages"><ul class="nav-tabs"></ul><div class="tab-content"></div></div><h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><h4 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h4><p>前往购买域名的网站，笔者是在<a href="http://www.cndns.com/" target="_blank" rel="noopener">美橙互联</a>购买的域名，建议大家去<a href="https://sg.godaddy.com/" target="_blank" rel="noopener">GoDaddy</a>购买，第一年很便宜。</p><h4 id="申请免费域名"><a href="#申请免费域名" class="headerlink" title="申请免费域名"></a>申请免费域名</h4><p><a href="http://www.point.ml/" target="_blank" rel="noopener">.ML免费域名申请注册</a> 、<a href="http://www.dot.cf/" target="_blank" rel="noopener">.CF免费域名申请注册</a>、<a href="http://www.dot.ga/" target="_blank" rel="noopener">.GA免费域名申请注册</a>、<a href="http://www.dot.tk" target="_blank" rel="noopener">.TK免费域名申请注册</a><br>申请域名都比较简单，实在不会就百度一下，很多教程，TK域名算是一个老牌的域名了，据说目前活跃的域名超过1600万个，这里估计国人也贡献了不少。</p><p>将自己的域名和Github Pages绑定，需要做以下几件事情：<br><a id="more"></a></p><h3 id="修改域名DNS"><a href="#修改域名DNS" class="headerlink" title="修改域名DNS"></a>修改域名DNS</h3><p>详情：修改你的域名DNS为f1g1ns1.dnspod.net 和 f1g1ns2.dnspod.net 。</p><h3 id="创建CNAME文件"><a href="#创建CNAME文件" class="headerlink" title="创建CNAME文件"></a>创建CNAME文件</h3><p>详情：在你的本站点目录的source目录下添加一个CNAME文件，以文本编辑器打开，里面添加你的域名信息（不带有http），如笔者域名：zlyunduan.com 。</p><h3 id="配置DNSPOD"><a href="#配置DNSPOD" class="headerlink" title="配置DNSPOD"></a>配置DNSPOD</h3><p>详情：前往<a href="https://www.dnspod.cn/" target="_blank" rel="noopener">DNSPOD官网</a>注册，并添加域名，添加成功后点击域名链接，进入域名记录界面添加三条如下记录：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">主机记录：@ 记录类型：A 记录值：192.30.252.153</span><br><span class="line">主机记录：@ 记录类型：A 记录值：192.30.252.154</span><br><span class="line">主机记录：www 记录类型：CNAME 记录值：你的github pages地址</span><br></pre></td></tr></table></figure><h3 id="更新Hexo"><a href="#更新Hexo" class="headerlink" title="更新Hexo"></a>更新Hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd hexo 当前目录</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><p>详情：将修改后的hexo相关文件提交后，即可使用自己的域名访问blog了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;笨蛋自以为聪明，聪明人才知道自己是笨蛋。 —— 莎士比亚 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title&gt;&lt;/a&gt;&lt;span class=&quot;exturl&quot;&gt;&lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt; GitHub Pages&lt;/span&gt;&lt;/h2&gt;&lt;div class=&quot;tabs&quot; id=&quot;pages&quot;&gt;&lt;ul class=&quot;nav-tabs&quot;&gt;&lt;/ul&gt;&lt;div class=&quot;tab-content&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;域名绑定&quot;&gt;&lt;a href=&quot;#域名绑定&quot; class=&quot;headerlink&quot; title=&quot;域名绑定&quot;&gt;&lt;/a&gt;域名绑定&lt;/h2&gt;&lt;h4 id=&quot;购买域名&quot;&gt;&lt;a href=&quot;#购买域名&quot; class=&quot;headerlink&quot; title=&quot;购买域名&quot;&gt;&lt;/a&gt;购买域名&lt;/h4&gt;&lt;p&gt;前往购买域名的网站，笔者是在&lt;a href=&quot;http://www.cndns.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;美橙互联&lt;/a&gt;购买的域名，建议大家去&lt;a href=&quot;https://sg.godaddy.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GoDaddy&lt;/a&gt;购买，第一年很便宜。&lt;/p&gt;
+&lt;h4 id=&quot;申请免费域名&quot;&gt;&lt;a href=&quot;#申请免费域名&quot; class=&quot;headerlink&quot; title=&quot;申请免费域名&quot;&gt;&lt;/a&gt;申请免费域名&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.point.ml/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;.ML免费域名申请注册&lt;/a&gt; 、&lt;a href=&quot;http://www.dot.cf/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;.CF免费域名申请注册&lt;/a&gt;、&lt;a href=&quot;http://www.dot.ga/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;.GA免费域名申请注册&lt;/a&gt;、&lt;a href=&quot;http://www.dot.tk&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;.TK免费域名申请注册&lt;/a&gt;&lt;br&gt;申请域名都比较简单，实在不会就百度一下，很多教程，TK域名算是一个老牌的域名了，据说目前活跃的域名超过1600万个，这里估计国人也贡献了不少。&lt;/p&gt;
+&lt;p&gt;将自己的域名和Github Pages绑定，需要做以下几件事情：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://muyizl.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://muyizl.github.io/tags/Hexo/"/>
+    
+      <category term="Github Pages" scheme="https://muyizl.github.io/tags/Github-Pages/"/>
+    
+      <category term="William Shakespeare" scheme="https://muyizl.github.io/tags/William-Shakespeare/"/>
     
   </entry>
   
