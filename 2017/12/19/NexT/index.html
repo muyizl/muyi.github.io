@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="技术博客">
 <meta property="og:description" content="为了进一步美化自己的个人博客，博主采用了文档十分全面的 NexT主题，以下主要介绍NexT主题的使用及部分配置。 在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。 为了描述方便，在以下说明中，将前者称为站点配置文件， 后者称为主题配置文件">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-05T03:43:23.832Z">
+<meta property="og:updated_time" content="2019-03-05T06:02:43.531Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NexT主题使用及配置">
 <meta name="twitter:description" content="为了进一步美化自己的个人博客，博主采用了文档十分全面的 NexT主题，以下主要介绍NexT主题的使用及部分配置。 在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。 为了描述方便，在以下说明中，将前者称为站点配置文件， 后者称为主题配置文件">
@@ -327,7 +327,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-03-05T11:43:23+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-05T14:02:43+08:00">
                 2019-03-05
               </time>
             
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.1k
+                  1.2k
                 </span>
               
 
@@ -414,7 +414,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  5
                 </span>
               
             </div>
@@ -465,9 +465,9 @@
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文章末尾添加“本文结束”标记</span></span><br><span class="line"><span class="attr">passage_end_tag:</span></span><br><span class="line"><span class="attr">    enabled:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </div></div></div>
 <h3 id="躁动的小心心"><a href="#躁动的小心心" class="headerlink" title="躁动的小心心"></a>躁动的小心心</h3><div class="tabs" id="心心"><ul class="nav-tabs"><li class="tab active"><a href="#心心-1">编辑主题配置文件</a></li><li class="tab"><a href="#心心-2">编辑footer文件</a></li><li class="tab"><a href="#心心-3">编辑custom文件</a></li></ul><div class="tab-content"><div class="tab-pane active" id="心心-1"><p><div class="note "><p>文件位置：/themes/next/_config.yml</p></div></p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">footer:</span><br><span class="line">-  icon: user</span><br><span class="line">+  icon: heart</span><br></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">footer</span>:</span><br><span class="line">&lt;<span class="selector-tag">span</span> class=<span class="string">“label danger”</span>&gt;- <span class="attribute">icon</span>: user&lt;/span&gt;</span><br><span class="line">&lt;<span class="selector-tag">span</span> class=<span class="string">“label success”</span>&gt;+ <span class="attribute">icon</span>: heart&lt;/span&gt;</span><br></pre></td></tr></table></figure>
 </div><div class="tab-pane" id="心心-2"><p><div class="note "><p>文件位置：/themes/next/layout/_partials/footer.swig</p></div></p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- &lt;span <span class="attribute">class</span>=<span class="string">“with-love”</span>&gt;</span><br><span class="line">+ &lt;span <span class="attribute">class</span>=<span class="string">“with-love”</span> <span class="attribute">id</span>=<span class="string">“heart”</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">“label danger”</span>&gt;- <span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">with-love</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line">&lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">“label success”</span>&gt;+ <span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">with-love</span> <span class="attr">id</span>=<span class="string">heart</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 </div><div class="tab-pane" id="心心-3"><p><div class="note "><p>文件位置：/themes/next/source/css/_custom/custom.styl</p></div></p>
 <figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 自定义页脚跳动的心样式</span></span><br><span class="line">@keyframes heartAnimate &#123;</span><br><span class="line">    <span class="number">0</span>%,<span class="number">100</span>%&#123;transform:<span class="keyword">scale</span>(<span class="number">1</span>);&#125;</span><br><span class="line">    <span class="number">10</span>%,<span class="number">30</span>%&#123;transform:<span class="keyword">scale</span>(<span class="number">0.9</span>);&#125;</span><br><span class="line">    <span class="number">20</span>%,<span class="number">40</span>%,<span class="number">60</span>%,<span class="number">80</span>%&#123;transform:<span class="keyword">scale</span>(<span class="number">1.1</span>);&#125;</span><br><span class="line">    <span class="number">50</span>%,<span class="number">70</span>%&#123;transform:<span class="keyword">scale</span>(<span class="number">1.1</span>);&#125;</span><br><span class="line">&#125;</span><br><span class="line">#heart &#123;</span><br><span class="line">    animation: heartAnimate <span class="number">1.33</span>s ease-<span class="keyword">in</span>-out infinite;</span><br><span class="line">&#125;</span><br><span class="line">.with-love &#123;</span><br><span class="line">    <span class="keyword">color</span>: rgb(<span class="number">255</span>, <span class="number">113</span>, <span class="number">168</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 </div></div></div>
