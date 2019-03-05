@@ -160,16 +160,15 @@
     <link href="https://muyizl.github.io/2017/12/19/Hexo-NexT-Tag-Plugins/"/>
     <id>https://muyizl.github.io/2017/12/19/Hexo-NexT-Tag-Plugins/</id>
     <published>2017-12-19T06:41:05.000Z</published>
-    <updated>2019-03-05T06:43:12.643Z</updated>
+    <updated>2019-03-05T07:01:12.269Z</updated>
     
-    <content type="html"><![CDATA[<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvdGFnLXBsdWdpbnM="><i class="fa fa-external-link"></i> Hexo标签插件</span><ul><li>引用块</li><li>代码块</li><li>jsFiddle</li><li>Gist</li><li>iframe</li><li>Image</li><li>Link</li><li>Include Code</li><li>Youtube</li><li>Vimeo</li><li>引用文章</li><li>引用资源</li><li>Raw<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZy9kb2NzL3RhZy1wbHVnaW5zLw=="><i class="fa fa-external-link"></i> NexT标签插件</span></li><li>Centered Quote</li><li>Group Pictures</li><li>Include Raw</li><li>Full Image</li><li>Note</li><li>Button</li><li>ExtURL</li><li>Label</li><li>Tabs</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id><a href="#" class="headerlink" title></a><span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvdGFnLXBsdWdpbnM="><i class="fa fa-external-link"></i> Hexo标签插件</span></h2><ul><li><span class="label primary">引用块</span></li><li><span class="label default">代码块</span></li><li><span class="label info">jsFiddle</span></li><li><span class="label warning">Gist</span></li><li><span class="label warning">iframe</span></li><li><span class="label success">Image</span></li><li><span class="label success">Link</span></li><li><span class="label danger">Include Code</span></li><li><span class="label default">Youtube</span></li><li><span class="label primary">Vimeo</span></li><li><span class="label primary">引用文章</span></li><li><span class="label default">引用资源</span></li><li><span class="label danger">Raw</span></li></ul><h2 id="-1"><a href="#-1" class="headerlink" title></a><span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZy9kb2NzL3RhZy1wbHVnaW5zLw=="><i class="fa fa-external-link"></i> NexT标签插件</span></h2><ul><li><span class="label success">Centered Quote</span></li><li><span class="label primary">Group Pictures</span></li><li><span class="label info">Include Raw</span></li><li><span class="label default">Full Image</span></li><li><span class="label danger">Note</span></li><li><span class="label warning">Button</span></li><li><span class="label default">ExtURL</span></li><li><span class="label primary">Label</span></li><li><span class="label danger">Tabs</span></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvdGFnLXBsdWdpbnM=&quot;&gt;&lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt; Hexo标签插件&lt;/span&gt;
-&lt;ul
+        &lt;h2 id&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title&gt;&lt;/a&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvdGFnLXBsdWdpbnM=&quot;&gt;&lt;i clas
       
     
     </summary>
