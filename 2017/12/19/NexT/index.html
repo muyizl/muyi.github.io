@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="技术博客">
 <meta property="og:description" content="为了进一步美化自己的个人博客，博主采用了文档十分全面的 NexT主题，以下主要介绍NexT主题的使用及部分配置。 在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。 为了描述方便，在以下说明中，将前者称为站点配置文件， 后者称为主题配置文件">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-04T12:20:45.186Z">
+<meta property="og:updated_time" content="2019-03-05T01:48:30.435Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NexT主题使用及配置">
 <meta name="twitter:description" content="为了进一步美化自己的个人博客，博主采用了文档十分全面的 NexT主题，以下主要介绍NexT主题的使用及部分配置。 在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。 为了描述方便，在以下说明中，将前者称为站点配置文件， 后者称为主题配置文件">
@@ -327,8 +327,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-03-04T20:20:45+08:00">
-                2019-03-04
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-05T09:48:30+08:00">
+                2019-03-05
               </time>
             
           </span>
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  811
+                  932
                 </span>
               
 
@@ -462,7 +462,10 @@
 </div><div class="tab-pane" id="步骤-3"><p>打开<span class="label danger">主题配置文件</span>（_config.yml)，在末尾添加如下代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 文章末尾添加“本文结束”标记</span><br><span class="line">passage_end_tag:</span><br><span class="line">    enabled: true</span><br></pre></td></tr></table></figure>
 </div></div></div>
-<h3 id="配置Valine评论系统"><a href="#配置Valine评论系统" class="headerlink" title="配置Valine评论系统"></a>配置Valine评论系统</h3><p><span class="exturl" data-url="aHR0cHM6Ly92YWxpbmUuanMub3Jn"><i class="fa fa-external-link"></i> Valine</span>是一款基于<span class="exturl" data-url="aHR0cHM6Ly9sZWFuY2xvdWQuY24="><i class="fa fa-external-link"></i> Leancloud</span>的快速、简洁、高效、MarkDown全语法支持的无后端评论系统。</p>
+<h3 id="配置Valine评论系统"><a href="#配置Valine评论系统" class="headerlink" title="配置Valine评论系统"></a>配置Valine评论系统</h3><span class="exturl" data-url="aHR0cHM6Ly92YWxpbmUuanMub3Jn"><i class="fa fa-external-link"></i> Valine</span>是一款基于<span class="exturl" data-url="aHR0cHM6Ly9sZWFuY2xvdWQuY24="><i class="fa fa-external-link"></i> Leancloud</span>的快速、简洁、高效、MarkDown全语法支持的无后端评论系统。<br><div class="tabs" id="valine"><ul class="nav-tabs"><li class="tab active"><a href="#valine-1">LeanCloud</a></li><li class="tab"><a href="#valine-2">配置Valine</a></li></ul><div class="tab-content"><div class="tab-pane active" id="valine-1"><p>注册<span class="exturl" data-url="aHR0cHM6Ly9sZWFuY2xvdWQuY24vZGFzaGJvYXJkL2xvZ2luLmh0bWwjL3NpZ251cA=="><i class="fa fa-external-link"></i> LeanCloud</span>, 并创建一个你自己的应用。<br>打开应用-&gt;设置-&gt;应用Key-&gt;获取App ID、App Key。</p>
+</div><div class="tab-pane" id="valine-2"><p>打开<span class="label danger">主题配置文件</span>：themes/next/_config.yml，修改下列代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># Valine.</span><br><span class="line"># You can get your appid and appkey from <a href="https://leancloud.cn" target="_blank" rel="noopener">https://leancloud.cn</a></span><br><span class="line"># more info please open <a href="https://valine.js.org" target="_blank" rel="noopener">https://valine.js.org</a></span><br><span class="line">valine:</span><br><span class="line">    enable: true</span><br><span class="line">    appid: your leancloud application appid</span><br><span class="line">    appkey: your leancloud application appkey</span><br><span class="line">    notify: true # mail notifier , <a href="https://github.com/xCss/Valine/wiki" target="_blank" rel="noopener">https://github.com/xCss/Valine/wiki</a></span><br><span class="line">    verify: false # Verification code</span><br><span class="line">    placeholder: Just comment # comment box placeholder</span><br><span class="line">    avatar: mm # gravatar style</span><br><span class="line">    guest_info: nick,mail,link # custom comment header</span><br><span class="line">    pageSize: 10 # pagination size</span><br></pre></td></tr></table></figure>
+</div></div></div>
 
       
     </div>
