@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://muyizl.github.io/"/>
-  <updated>2019-03-03T07:48:11.758Z</updated>
+  <updated>2019-09-06T02:33:13.067Z</updated>
   <id>https://muyizl.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jenkins部署及问题记录</title>
+    <link href="https://muyizl.github.io/2019/09/06/Jenkins%E9%83%A8%E7%BD%B2/"/>
+    <id>https://muyizl.github.io/2019/09/06/Jenkins部署/</id>
+    <published>2019-09-06T02:15:43.224Z</published>
+    <updated>2019-09-06T02:33:13.067Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Jenkins部署"><a href="#Jenkins部署" class="headerlink" title="Jenkins部署"></a>Jenkins部署</h3><span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC8zNjY4OTc5NDc2YWQ="><i class="fa fa-external-link"></i> 参考文章</span><h3 id="Jenkins配置节点"><a href="#Jenkins配置节点" class="headerlink" title="Jenkins配置节点"></a>Jenkins配置节点</h3><span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC9mNDQ1OTgzNTEyYjc="><i class="fa fa-external-link"></i> 参考文章</span> <h3 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h3><h4 id="GIT-SSH…Permission-denied-publickey"><a href="#GIT-SSH…Permission-denied-publickey" class="headerlink" title="GIT_SSH…Permission denied (publickey)."></a>GIT_SSH…Permission denied (publickey).</h4><span class="exturl" data-url="aHR0cHM6Ly94eXoxMDAxLnh5ei9hcnRpY2xlcy8zNTEyMC5odG1s"><i class="fa fa-external-link"></i> 解决方案</span> ]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Jenkins部署&quot;&gt;&lt;a href=&quot;#Jenkins部署&quot; class=&quot;headerlink&quot; title=&quot;Jenkins部署&quot;&gt;&lt;/a&gt;Jenkins部署&lt;/h3&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3
+      
+    
+    </summary>
+    
+      <category term="自动化打包" scheme="https://muyizl.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/"/>
+    
+    
+      <category term="Jenkins" scheme="https://muyizl.github.io/tags/Jenkins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jenkins打包无法在iOS12上运行</title>
+    <link href="https://muyizl.github.io/2019/09/06/Jenkins%E6%89%93%E5%8C%85%E6%97%A0%E6%B3%95%E5%9C%A8iOS12%E4%B8%8A%E8%BF%90%E8%A1%8C/"/>
+    <id>https://muyizl.github.io/2019/09/06/Jenkins打包无法在iOS12上运行/</id>
+    <published>2019-09-06T01:23:49.388Z</published>
+    <updated>2019-09-06T02:34:22.205Z</updated>
+    
+    <content type="html"><![CDATA[<p>之前Jenkins打包一直部署在Mac机上，最近运维单独在一台服务器上部署了Jenkins，因此做了一些调整，完成构建后的ipa文件始终无法在iOS12以上版本运行[启动闪退问题]，因此做了一系列操作。</p><p>####查看崩溃日志：</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">工程中已接入Bugly，没有统计到Crash日志，由此看来<span class="keyword">App</span>还没启动完成就崩溃了。</span><br></pre></td></tr></table></figure><p>没有日志、在iOS11及以下正常运行，最开始以为是Xcode的问题[Xcode升级到了最新版本10.3]，然后以为是Jenkins版本的问题[升级到最新版本]，然并卵。</p><p>####<a href="https://github.com/FIRHQ/LogGuru/releases" target="_blank" rel="noopener"><strong>查看手机日志-Log Guru Github</strong></a><br>工具运行，链接手机，然后在已经读取出的日志里面，command + F 搜索项目名，找到了相关的记录</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">does</span> <span class="keyword">not</span> pass CT evaluation, <span class="literal">result</span>: <span class="number">0x80008</span></span><br><span class="line">Unrecoverable CT signature issue, bailing out.</span><br><span class="line">code signature validation failed.</span><br></pre></td></tr></table></figure><p>Google搜索找到了几篇相关的文章：</p><p><a href="https://forums.developer.apple.com/thread/106711" target="_blank" rel="noopener"><strong>does not pass CT evaluation, result: 0x80008</strong></a></p><p><a href="https://stackoverflow.com/questions/52440492/ios-app-wont-run-on-device-any-more-under-ios-12-unrecoverable-ct-signature-is/52506186#52506186" target="_blank" rel="noopener"><strong>Unrecoverable CT signature issue, bailing out.</strong></a></p><p>在iOS12下，iOS应用程序将不再在设备上运行：无法恢复的CT签名问题。</p><p>调整发布证书<code>始终信任</code>为<code>使用系统默认</code>设置，重新构建，成功。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;之前Jenkins打包一直部署在Mac机上，最近运维单独在一台服务器上部署了Jenkins，因此做了一些调整，完成构建后的ipa文件始终无法在iOS12以上版本运行[启动闪退问题]，因此做了一系列操作。&lt;/p&gt;
+&lt;p&gt;####查看崩溃日志：&lt;/p&gt;
+&lt;figure clas
+      
+    
+    </summary>
+    
+      <category term="自动化打包" scheme="https://muyizl.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/"/>
+    
+    
+      <category term="Jenkins" scheme="https://muyizl.github.io/tags/Jenkins/"/>
+    
+      <category term="iOS12" scheme="https://muyizl.github.io/tags/iOS12/"/>
+    
+  </entry>
   
   <entry>
     <title>IPv6审核问题</title>

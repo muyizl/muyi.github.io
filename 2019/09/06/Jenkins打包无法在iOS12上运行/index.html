@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="IPv6,审核,">
+  <meta name="keywords" content="Jenkins,iOS12,">
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="背景在最近一次项目审核被拒的问题中苹果提到了无法在IPv6环境下访问应用，因此做了一些问题排查。 测试客户端是否能够在IPv6环境下运行测试服务器是否能够支持IPv6测试苹果的服务器是否能够访问我们的ip地址首先需要配置ipv6网络环境，配置方法自行百度或 看这里看这里…。 问题：互联网共享界面为什么没有 ‘创建NAT64’ 这一选项答案：请按住option打开共享。。。  上一项通过证明你的客户">
-<meta name="keywords" content="IPv6,审核">
+<meta name="description" content="之前Jenkins打包一直部署在Mac机上，最近运维单独在一台服务器上部署了Jenkins，因此做了一些调整，完成构建后的ipa文件始终无法在iOS12以上版本运行[启动闪退问题]，因此做了一系列操作。 ####查看崩溃日志： 1工程中已接入Bugly，没有统计到Crash日志，由此看来App还没启动完成就崩溃了。 没有日志、在iOS11及以下正常运行，最开始以为是Xcode的问题[Xcode升级">
+<meta name="keywords" content="Jenkins,iOS12">
 <meta property="og:type" content="article">
-<meta property="og:title" content="IPv6审核问题">
-<meta property="og:url" content="https://muyizl.github.io/2017/12/27/IPv6-Question/index.html">
+<meta property="og:title" content="Jenkins打包无法在iOS12上运行">
+<meta property="og:url" content="https://muyizl.github.io/2019/09/06/Jenkins打包无法在iOS12上运行/index.html">
 <meta property="og:site_name" content="技术博客">
-<meta property="og:description" content="背景在最近一次项目审核被拒的问题中苹果提到了无法在IPv6环境下访问应用，因此做了一些问题排查。 测试客户端是否能够在IPv6环境下运行测试服务器是否能够支持IPv6测试苹果的服务器是否能够访问我们的ip地址首先需要配置ipv6网络环境，配置方法自行百度或 看这里看这里…。 问题：互联网共享界面为什么没有 ‘创建NAT64’ 这一选项答案：请按住option打开共享。。。  上一项通过证明你的客户">
+<meta property="og:description" content="之前Jenkins打包一直部署在Mac机上，最近运维单独在一台服务器上部署了Jenkins，因此做了一些调整，完成构建后的ipa文件始终无法在iOS12以上版本运行[启动闪退问题]，因此做了一系列操作。 ####查看崩溃日志： 1工程中已接入Bugly，没有统计到Crash日志，由此看来App还没启动完成就崩溃了。 没有日志、在iOS11及以下正常运行，最开始以为是Xcode的问题[Xcode升级">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-03T07:48:11.758Z">
+<meta property="og:updated_time" content="2019-09-06T02:34:22.205Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IPv6审核问题">
-<meta name="twitter:description" content="背景在最近一次项目审核被拒的问题中苹果提到了无法在IPv6环境下访问应用，因此做了一些问题排查。 测试客户端是否能够在IPv6环境下运行测试服务器是否能够支持IPv6测试苹果的服务器是否能够访问我们的ip地址首先需要配置ipv6网络环境，配置方法自行百度或 看这里看这里…。 问题：互联网共享界面为什么没有 ‘创建NAT64’ 这一选项答案：请按住option打开共享。。。  上一项通过证明你的客户">
+<meta name="twitter:title" content="Jenkins打包无法在iOS12上运行">
+<meta name="twitter:description" content="之前Jenkins打包一直部署在Mac机上，最近运维单独在一台服务器上部署了Jenkins，因此做了一些调整，完成构建后的ipa文件始终无法在iOS12以上版本运行[启动闪退问题]，因此做了一系列操作。 ####查看崩溃日志： 1工程中已接入Bugly，没有统计到Crash日志，由此看来App还没启动完成就崩溃了。 没有日志、在iOS11及以下正常运行，最开始以为是Xcode的问题[Xcode升级">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://muyizl.github.io/2017/12/27/IPv6-Question/">
+  <link rel="canonical" href="https://muyizl.github.io/2019/09/06/Jenkins打包无法在iOS12上运行/">
 
 
 
 
 
-  <title>IPv6审核问题 | 技术博客</title>
+  <title>Jenkins打包无法在iOS12上运行 | 技术博客</title>
   
 
 
@@ -282,7 +282,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://muyizl.github.io/2017/12/27/IPv6-Question/">
+    <link itemprop="mainEntityOfPage" href="https://muyizl.github.io/2019/09/06/Jenkins打包无法在iOS12上运行/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="木易">
@@ -299,7 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">IPv6审核问题</h1>
+          <h1 class="post-title" itemprop="name headline">Jenkins打包无法在iOS12上运行</h1>
         
 
         <div class="post-meta">
@@ -311,8 +311,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-27T13:19:11+08:00">
-                2017-12-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-06T09:23:49+08:00">
+                2019-09-06
               </time>
             
 
@@ -327,8 +327,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-03-03T15:48:11+08:00">
-                2019-03-03
+              <time title="更新于" itemprop="dateModified" datetime="2019-09-06T10:34:22+08:00">
+                2019-09-06
               </time>
             
           </span>
@@ -346,8 +346,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Objective-C/" itemprop="url" rel="index">
-                    <span itemprop="name">Objective-C</span>
+                  <a href="/categories/自动化打包/" itemprop="url" rel="index">
+                    <span itemprop="name">自动化打包</span>
                   </a>
                 </span>
 
@@ -364,8 +364,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/12/27/IPv6-Question/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2017/12/27/IPv6-Question/" itemprop="commentCount"></span>
+                <a href="/2019/09/06/Jenkins打包无法在iOS12上运行/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/06/Jenkins打包无法在iOS12上运行/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -373,7 +373,7 @@
 
           
           
-             <span id="/2017/12/27/IPv6-Question/" class="leancloud_visitors" data-flag-title="IPv6审核问题">
+             <span id="/2019/09/06/Jenkins打包无法在iOS12上运行/" class="leancloud_visitors" data-flag-title="Jenkins打包无法在iOS12上运行">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  489
+                  301
                 </span>
               
 
@@ -435,17 +435,17 @@
       
 
       
-        <h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>在最近一次项目审核被拒的问题中苹果提到了无法在IPv6环境下访问应用，因此做了一些问题排查。</p>
-<div class="tabs" id="问题排查"><ul class="nav-tabs"><li class="tab active"><a href="#问题排查-1">测试客户端是否能够在IPv6环境下运行</a></li><li class="tab"><a href="#问题排查-2">测试服务器是否能够支持IPv6</a></li><li class="tab"><a href="#问题排查-3">测试苹果的服务器是否能够访问我们的ip地址</a></li></ul><div class="tab-content"><div class="tab-pane active" id="问题排查-1"><p>首先需要配置ipv6网络环境，配置方法自行百度或<span class="exturl" data-url="aHR0cDovL2ppbmd5YW4uYmFpZHUuY29tL2FydGljbGUvMGJjODA4ZmM1NmE5YmYxYmQ1ODViOTZkLmh0bWw="><i class="fa fa-external-link"></i> 看这里看这里…</span>。</p>
-<div class="note "><p>问题：互联网共享界面为什么没有 ‘创建NAT64’ 这一选项<br>答案：请按住option打开共享。。。</p></div>
-
-</div><div class="tab-pane" id="问题排查-2"><p>上一项通过证明你的客户端应用在 IPv6 网络下，是(基本)没有问题的，但是无法验证你的服务器能够对 IPv6 网络做出正确的响应。然而，苹果审核的时候，却是要去 DNS 服务器询问你的服务器的 IPv6 地址，然后进行访问。如果查询不到 IPv6 地址，可能会进而询问 IPv4 地址，然后进行转换使用。苹果明确表示服务器不需要支持 IPv6，但是必须正确响应 IPv6 的 DNS 查询。</p>
-<p>如何验证呢？使用以下命令即可：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dig +nocmd +nostats example<span class="selector-class">.com</span> AAAA</span><br></pre></td></tr></table></figure>
-
-<p>如果返回的 status 为 NOERROR， 那基本就没什么问题，但是一定要在多个网络环境下测试都通过才行。如果返回的是其他的响应，尤其是 SERVFAIL 的情况，那就基本杯具了。由于你已经验证了客户端没有问题，现在要做的，就是找相关人员查看 DNS 配置，直到稳定返回 NOERROR 为止，详情见<span class="exturl" data-url="aHR0cHM6Ly9mb3J1bXMuZGV2ZWxvcGVyLmFwcGxlLmNvbS9tZXNzYWdlLzE0NzU3OSMxNDc1Nzk="><i class="fa fa-external-link"></i> IPv6 and App Review</span>。</p>
-</div><div class="tab-pane" id="问题排查-3"><p>因为本次遇到的问题并不属于这一范畴也就没有去做相关的了解，目前所了解到的方式是通过支持IPv6的主机转接到海外，能力有限不多描述。苹果审核IPv6解决思路可以参考该<span class="exturl" data-url="aHR0cDovL3d3dy5tYW1pY29kZS5jb20vaW5mby1kZXRhaWwtMTUwMTU3Mi5odG1s"><i class="fa fa-external-link"></i> 文章</span>。</p>
-</div></div></div>
+        <p>之前Jenkins打包一直部署在Mac机上，最近运维单独在一台服务器上部署了Jenkins，因此做了一些调整，完成构建后的ipa文件始终无法在iOS12以上版本运行[启动闪退问题]，因此做了一系列操作。</p>
+<p>####查看崩溃日志：</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">工程中已接入Bugly，没有统计到Crash日志，由此看来<span class="keyword">App</span>还没启动完成就崩溃了。</span><br></pre></td></tr></table></figure>
+<p>没有日志、在iOS11及以下正常运行，最开始以为是Xcode的问题[Xcode升级到了最新版本10.3]，然后以为是Jenkins版本的问题[升级到最新版本]，然并卵。</p>
+<p>####<a href="https://github.com/FIRHQ/LogGuru/releases" target="_blank" rel="noopener"><strong>查看手机日志-Log Guru Github</strong></a><br>工具运行，链接手机，然后在已经读取出的日志里面，command + F 搜索项目名，找到了相关的记录</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">does</span> <span class="keyword">not</span> pass CT evaluation, <span class="literal">result</span>: <span class="number">0x80008</span></span><br><span class="line">Unrecoverable CT signature issue, bailing out.</span><br><span class="line">code signature validation failed.</span><br></pre></td></tr></table></figure>
+<p>Google搜索找到了几篇相关的文章：</p>
+<p><a href="https://forums.developer.apple.com/thread/106711" target="_blank" rel="noopener"><strong>does not pass CT evaluation, result: 0x80008</strong></a></p>
+<p><a href="https://stackoverflow.com/questions/52440492/ios-app-wont-run-on-device-any-more-under-ios-12-unrecoverable-ct-signature-is/52506186#52506186" target="_blank" rel="noopener"><strong>Unrecoverable CT signature issue, bailing out.</strong></a></p>
+<p>在iOS12下，iOS应用程序将不再在设备上运行：无法恢复的CT签名问题。</p>
+<p>调整发布证书<code>始终信任</code>为<code>使用系统默认</code>设置，重新构建，成功。</p>
 
       
     </div>
@@ -477,7 +477,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://muyizl.github.io/2017/12/27/IPv6-Question/" title="IPv6审核问题">https://muyizl.github.io/2017/12/27/IPv6-Question/</a>
+    <a href="https://muyizl.github.io/2019/09/06/Jenkins打包无法在iOS12上运行/" title="Jenkins打包无法在iOS12上运行">https://muyizl.github.io/2019/09/06/Jenkins打包无法在iOS12上运行/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -492,9 +492,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/IPv6/" rel="tag"># IPv6</a>
+            <a href="/tags/Jenkins/" rel="tag"># Jenkins</a>
           
-            <a href="/tags/审核/" rel="tag"># 审核</a>
+            <a href="/tags/iOS12/" rel="tag"># iOS12</a>
           
         </div>
       
@@ -507,8 +507,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/27/iPhoneX-Layout/" rel="next" title="iPhone X 界面适配方案">
-                <i class="fa fa-chevron-left"></i> iPhone X 界面适配方案
+              <a href="/2017/12/27/IPv6-Question/" rel="next" title="IPv6审核问题">
+                <i class="fa fa-chevron-left"></i> IPv6审核问题
               </a>
             
           </div>
@@ -517,8 +517,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/06/Jenkins打包无法在iOS12上运行/" rel="prev" title="Jenkins打包无法在iOS12上运行">
-                Jenkins打包无法在iOS12上运行 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/09/06/Jenkins部署/" rel="prev" title="Jenkins部署及问题记录">
+                Jenkins部署及问题记录 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -574,17 +574,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -669,22 +660,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
